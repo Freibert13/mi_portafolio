@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+<header class="encabezado__container">
+    <h1 class="nombre">José Hernández</h1>
+        <nav class="encabezado__navegacion">
+            <ul class="navegacion__lista">
+                <li>
+                    <a class="encabezado__navegacion--item" href="#sobre_mi" aria-label="Ir al Sobre mi"> Sobre mi </a>
+                </li>
+                <li>
+                    <a class="encabezado__navegacion--item" href="#habilidades" aria-label="Ir a skills"> Skills </a>
+                </li>
+                <li>
+                    <a class="encabezado__navegacion--item" href="#hobbies" aria-label="Ir a Hobbies"> Hobbies </a>
+                </li>
+                <li>
+                    <a class="encabezado__navegacion--item" href="#formacion" aria-label="Ir a Formacion"> Formacion </a>
+                </li>
+                <li>
+                    <a class="encabezado__navegacion--item" href="#proyectos" aria-label="Ir a proyectos"> Proyectos </a>
+                </li>
+                <li>
+                    <a class="encabezado__navegacion--item" href="#contacto" aria-label="Ir a contacto"> Contacto </a>
+                </li>
+            </ul>
+        </nav>
+</header>
+<body id="top">
+    <figure class="presentacion">
+         <img  class="avatar"  src="./img/avatar.png" alt="Avatar Jose Hernandez">
+            <figcaption 
+                class="presentacion_titulo"> <strong> Hola, mi nombre es José Hernandez y construyo paginas web </strong> 
+                <p 
+            class="presentacion_texto">Actualmente estoy cursando varios programas de formación en Alura Latam gracias a una beca otorgada por Oracle. 
+            Esta oportunidad me ha permitido desarrollar habilidades en áreas clave de la tecnología y programación, ampliando mis conocimientos para crecer profesionalmente en el mundo digital.
+                </p>
+            </figcaption>
+    </figure> 
+
+        <div class="redes">
+            <a target="_blank" href="https://linkedin.com/in/jose-hernandez-a932b32ba"><img src="./logos/linkedin.png" alt="logo linkedin"> linkedin</a>
+            <a target="_blank" href="https://github.com/"> <img src=".//logos/github.png" alt=" logo github"> Github</a> 
+        </div>
+
+    <section id="sobre_mi" class="sobre_mi">
+            <h2 class="sobre_mi-titulo">Sobre mi</h2>
+            <p class="sobre_mi-texto">Soy un vendedor con experiencia en diferentes rubros como la perfumería y la indumentaria de lujo. 
+                Actualmente me enfoco en el estudio de front-end, impulsado por mi interés en mejorar la experiencia del usuario y optimizar mi perfil comercial. 
+                Considero que el desarrollo de interfaces atractivas y funcionales es clave para ofrecer un valor adicional en el ámbito comercial, 
+                lo que me permite unir mis habilidades en ventas con el mundo de la tecnología.</p>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+        <h2 class="habilidades_titulo">Skills</h2>
+        <ul class="habilidades_lista">
+            <li class="habilidades_item">
+                <img class="habilidades_icono" src="./logos/html.png" alt="imagen html">
+                <p class="habilidades_nombre">HTML5</p>
+            </li>
+
+            <li class="habilidades_item">
+                <img class="habilidades_icono" src="./logos/css.png" alt="imagen css">
+                <p class="habilidades_nombre">CSS</p>
+            </li>
+
+            <li class="habilidades_item">
+                <img class="habilidades_icono" src="./logos/js.png" alt="imagen js">
+                <p class="habilidades_nombre">Javascript</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="hobbies" class="hobbies">
+            <h2 class="hobbies_titulo">Hobbies</h2>
+            <ul class="hobbies_lista">
+                <li class="hobbies_item">
+                    <img class="hobbies_icono" src="./logos/audifonos.png" alt="imagen audifonos">
+                    <p class="hobbies_nombre">Música</p>
+                </li>
+    
+                <li class="hobbies_item">
+                    <img class="hobbies_icono" src="./logos/resto.png" alt="imagen cubiertos">
+                    <p class="hobbies_nombre">Cocinar</p>
+                </li>
+    
+                <li class="hobbies_item">
+                    <img class="hobbies_icono" src="./logos/tv.png" alt="imagen tv">
+                    <p class="hobbies_nombre">Series</p>
+                </li>
+            </ul>
+        </section>
+
+         <section id="formacion" class="formacion">
+                <h2 class="formacion_titulo">Formacion académica</h2>
+                <img class="formacion_icono" src="img/alura.png" alt="logo alura">
+                <h3 class="formacion_descripcion"> Formacion Front end </h3>
+                <p class="formacion_detalle"> 2024 (En curso)</p>
+        </section>
+
+        <section id="proyectos" class="proyectos">
+                <h2 class="proyectos_titulo">Experiencia profesional</h2>
+                
+                <div class="proyecto_contenedor">
+                    <img src="./img/proyecto.png" alt="imagen del proyecto">
+    
+                 <div class="proyecto_texto">  
+    
+                <h3 class="proyectos_nombre">Ecriptador de texto </h3>
+                <p class="pryecto_descripcion"> Challenge Oracle</p>
+                <a  target="_blank" class="enlace_proyecto" href="https://github.com/Freibert13/encriptador-texto"> Repositório </a>
+            </div>
+        </div>
+                      
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2 class="contaco_titulo">Contacto</h2>
+            <form class="contacto_formulario" action="">
+                <label for="Nombre">Nombre</label>
+                <input class="contacto_campo" type="text" name="Nombre" id="Nombre" placeholder="Nombre">
+                
+                <label for="mail">E-mail</label>
+                <input class="contacto_campo" type="email" name="mail" id="mail" placeholder="E-mail">
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea class="contacto_campo-texto" id="mensaje" placeholder="Mensaje"></textarea>
+                
+                <button class="contacto_boton" type="submit">Enviar</button>
+              </form>
+        </section>
+<footer class="footer">
+    <a href="#top" class="volver_inicio"> ⬆ </a>
+    <p>Desarrollado por José Hernández (2024)</p>
+ </footer>
+        
+</body>
+
+
+</html>
